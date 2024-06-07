@@ -1,0 +1,417 @@
+section{
+    margin-bottom: 100px;
+}
+#booking .booking_content{
+    width: 48%;
+}
+
+#booking .booking_content .intro_desc{
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#booking{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#booking .booking{
+    padding-top: 30px;
+}
+
+#booking .booking a{
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+#booking .intro_image{
+    width: 48%;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#booking .intro_image img{
+    width: 100%;
+}
+
+
+#booking .timetable{
+    width: 100%;
+    height: 400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: scroll;
+    position: relative;
+    padding: 20px 100px 0 0;
+}
+
+#booking .timetable::-webkit-scrollbar{
+    display: none;
+}
+
+#booking .year_month{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#booking .year_month{
+    position: absolute;
+    width: 150px;
+    right: 0px;
+}
+
+#booking .days li{
+    width: 50px;
+    text-align: center;
+}
+
+#booking .days{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#booking .days li{
+    display: inline-block;
+    width: 100px;
+}
+
+#booking .date_days{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#booking .date_day{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#booking .date_day:hover{
+    background-color: grey;
+}
+
+.calendar{
+    position: absolute;
+    width: 60%;
+    left: 0;
+    top: calc(50vh - 200px);
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 10;
+    display: none;
+}
+
+#booking .calendar .hr{
+    margin-bottom: 20px;
+}
+
+.visible{
+    display: block!important;
+}
+
+
+
+#timings{
+    width: 40%;
+    position: absolute;
+    height: 400px;
+    right: 0;
+    top: calc(50vh - 200px);
+    text-align: center;
+    padding-top: 20px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 10;
+    display: none;
+}
+
+#timings input {
+    display: block;
+    margin: 30px auto;
+}
+
+.calendar img{
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+}
+
+.calendar .close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+#timings button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid orange;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.none_visible{
+    display: none!important;
+}
+
+
+.about_us{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.about_us_text{
+    width: 100%!important;
+    padding: 0 50px 0 0;
+}
+
+.about_us .main_text{
+    margin-bottom: 20px;
+}
+
+.about_us .about_us_text b{
+    display: block;
+}
+
+.about_us .about_us_text .add_text{
+    margin-top: 20px;
+}
+
+#carouselExampleFade .carousel-item{
+    width: 100%!important;
+}
+
+.about_us_text h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about_us img{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------section 4 ----------------------------------------------- */
+#section4{
+    padding-top: 100px;
+}
+
+#section3 .map h3{
+    margin-bottom: 20px;
+}
+
+#section3 .map_contact{
+    display: flex;
+}
+
+#section3 .map_details{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+#section3 .map_details .details{
+    padding: 100px;
+}
+
+#section3 .map_details .details p{
+    display: block;
+    margin: 3px;
+    padding: 0;
+}
+
+#section3 .map_details .details h5{
+    margin: 20px 0;
+}
+
+#section3 .map_details .details .leads{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+#section3 .map_details .details .leads img{
+    width: 35px;
+}
+
+#section3 .map{
+    width: 50%;
+}
+#section3 .details{
+    width: 50%;
+}
+
+#section4{
+    padding-bottom: 100px;
+}
+
+.outerdiv
+{
+
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerdiv
+{
+	margin: 1rem;
+	display: grid;
+	grid-gap: 1.5rem;
+	grid-template-rows: repeat(2,22rem);
+	grid-template-columns: repeat(4,17rem);
+}
+.eachdiv
+{
+	padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    color: white;
+}
+.div1
+{
+	background: #733FC8;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 25rem;
+}
+.div2
+{
+	background:#49556B;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.div3
+{
+	background: white;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    color: black;
+}
+.div4
+{
+	background: white;
+	grid-column: 1/2;
+    grid-row: 2/3;
+    color: black;
+}
+.div5
+{
+	background: #18202D;
+	grid-column: 2/4;
+    grid-row: 2/3;
+}
+.userdetails
+{
+	display: flex;
+}
+.imgbox
+{
+	margin-right: 1rem;
+}
+.imgbox img
+{
+	border-radius: 50%;
+	width: 2rem;
+	border: 2px solid #cec5c5;
+}
+.detbox
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detbox p
+{
+	margin-bottom: 20px!important;
+	font-size: 22px!important;
+}
+.detbox .name
+{
+	color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+.detbox .name.dark
+{
+	color: #49505A;
+}
+.detbox .designation
+{
+	color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.detbox .designation.dark
+{
+	color: #49505A;
+}
+.review h4
+{
+	font-size: 1.4rem;
+	color: #F3DEFF;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+.review.dark h4{
+	color:#4B5258;
+}
+.review p
+{
+	font-size: 0.95rem;
+    color: #F3DEFF;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+.review.dark p{
+	color: #0e0e0e;
+}
+.attribution
+{
+	font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+.attribution a
+{
+	text-decoration: none;
+}
+
+#section5{
+    padding-top: 100px;
+}
+
+#section5 .reviews_title{
+    text-align: center;
+}
+
+#section5 .reviews_title p{
+    font-size: 26px;
+}
+
+

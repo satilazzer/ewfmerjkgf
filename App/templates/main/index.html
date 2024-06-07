@@ -1,0 +1,150 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'main/css/index.css'%} ">
+{% endblock %}
+{% block content %}
+    <main>
+        <div class="container">
+            <section id="booking">
+                <div class="booking_content">
+
+                    <div class="calendar">
+                        <div class="close"><img src="{% static 'main/img/icons/plus.png' %}" alt="img"></div>
+                        <div class="timetable">
+
+                            <ul class="days">
+                                <li class="day">Monday</li>
+                                <li class="day">Tuesday</li>
+                                <li class="day">Wednesday</li>
+                                <li class="day">Thursday</li>
+                                <li class="day">Friday</li>
+                                <li class="day">Saturday</li>
+                                <li class="day">Sunday</li>
+                            </ul>
+                            {% for k,v in final_data.items %}
+                                 <div class="year_month">
+                                    {{k}}
+                                 </div>
+                                 <hr class="hr">
+                                    {% for a in v %}
+                                     <a href="#" id="{{k}}-{{a}}" class="date_day">{{ a|slice:"0:2" }}</a>
+                                    {% endfor %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <form action="{% url 'main:main' %}" id="timings" method="POST">
+                        {% csrf_token %}
+                        <input type="text" placeholder="Exp: 13:30">
+                        <button type='submit' class="book_btn">Book</button>
+                    </form>
+                    <p class="intro_desc">Step into Serene Steps Yoga and embark on a journey to tranquility. Our studio is not just a place for yoga; it's a space where you can find balance, connect with your breath, and cultivate a sense of inner peace. Join us and discover why Serene Steps Yoga is more than just a class; it's a path to a healthier, more serene way of life.</p>
+                    <div class="booking">
+                        <a href="#">Book a table</a>
+                    </div>
+                </div>
+                <div class="intro_image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHN8ZW58MHx8MHx8fDA%3D" alt="img">
+                </div>
+            </section>
+            <section id="section2">
+                <div class="container">
+                    <div class="about_us">
+                        <div class="about_us_text">
+                            <h2>About us</h2>
+                            <p class = "main_text">Welcome to Serene Steps Yoga, a sanctuary in the heart of Dubai where the transformative power of yoga unfolds. Rooted in the belief that yoga is more than just a physical practice, we are committed to fostering a holistic approach to wellness. Our philosophy centres around the integration of breath, movement, and mindfulness, guiding our students on a journey to harmonize mind, body, and spirit.
+At Serene Steps Yoga our team of dedicated instructors is the heartbeat of our community.Discover the joy of yoga and unlock the potential for a healthier, more balanced life. We look forward to being part of your yoga journey at Serene Steps Yoga.</p>
+                        </div>
+                        <div class="about_us_carousel">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://nolinskiparis.com/wp-content/uploads/2022/06/restaurant-nolinski-paris-5-etoiles-luxe-12-guillaume-de-laubier.jpg" class="d-block w-100" alt="img">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="https://nolinskiparis.com/wp-content/uploads/2022/06/restaurant-nolinski-paris-5-etoiles-luxe-12-guillaume-de-laubier.jpg" class="d-block w-100" alt="img">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section4">
+                <div class="container">
+                    <div class="outerdiv">
+
+                        <div class="innerdiv">
+                          <!-- div1 -->
+                          <div class="div1 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name">Faranak h_n</p>
+                              </div>
+                            </div>
+                            <div class="review">
+                            <p>“ mostly I carry my bags with the right hand so my shoulders were so tired and there was no balance one of them was down also when i was trying to stand straight my back was tired so i tried their service and it was helpful.”</p>
+                            </div>
+                          </div>
+                          <!-- div2 -->
+                          <div class="div2 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name">Sally Elazab</p>
+                              </div>
+                            </div>
+                            <div class="review">
+                            <p>“Amazing place, new and different experience, changes happens from first session. I loved their staff, so friendly and professional.”</p>
+                            </div>
+                          </div>
+                          <!-- div3 -->
+                          <div class="div3 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name dark">Ralph Boyz</p>
+                              </div>
+                            </div>
+                            <div class="review dark">
+                              <p>“ I’ve been struggling with my face muscles since I had Bell’s Palsy a few years ago. I decided to try out the face massage they have it and it was amazing. I’ll need more sessions to fully recover, but I really enjoyed the results. Also the day after my skin was super tight and my face macules was super pumped, it feel like a face lift. The Dr is very knowledgeable and in definitely coming back. ”</p>
+                            </div>
+                          </div>
+                          <!-- div4 -->
+                          <div class="div4 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name dark">Lena Sami</p>
+                              </div>
+                            </div>
+                            <div class="review dark">
+                            <p>“ Loved my appointment with this clinic, they really worked on my posture and gave me a lot of advice on how to fix it ”</p>
+                            </div>
+                          </div>
+                          <!-- div5 -->
+                          <div class="div5 eachdiv">
+                            <div class="userdetails">
+                              <div class="detbox">
+                                <p class="name">Nisreen Sherbatji</p>
+                              </div>
+                            </div>
+                            <div class="review">
+                            <p>“ It was an amazing experience
+                                They heal the body in a comfortable way
+                                I love it and i will come back to them 😍♥️ ”</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+{% endblock %}
